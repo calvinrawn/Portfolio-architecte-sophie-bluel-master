@@ -763,3 +763,32 @@ h3{
 		padding: 10px 40px; /* le bouton "Valider" était trop large pour mobile */
 	}
 }
+
+/* ========================= */
+/* SCROLLBAR PERSONNALISÉE    */
+/* ========================= */
+
+/* Firefox */
+html {
+	scrollbar-width: thin; /* "auto" ou "thin" */
+	scrollbar-color: #1D6154 #f0f0f0; /* couleur du curseur | couleur du fond */
+}
+
+/* Chrome, Edge, Safari (Webkit) */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #1D6154;
+	border-radius: 10px;
+	border: 3px solid #f0f0f0; /* crée un petit espace autour du curseur */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #B1663C; /* ta couleur secondaire, au survol */
+}
