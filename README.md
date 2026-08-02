@@ -70,3 +70,4 @@ Si une erreur CORS apparaît dans la console du navigateur (F12), vérifier que 
 ### 3. Utilisation
 
 Une fois le frontend et le backend lancés simultanément, se connecter avec le compte de test ci-dessus pour accéder au mode édition (ajout/suppression de projets, upload d'images).
+

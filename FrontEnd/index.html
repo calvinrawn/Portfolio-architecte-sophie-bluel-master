@@ -49,31 +49,92 @@
 				<i class="fa-solid fa-pen-to-square"></i> Modifier
 			</button>
 		</div>
+		<div class="categoriesContainer">
+			<div data-filter="all" class="active-filter">Tous</div>
+			<div data-filter="objets">Objets</div>
+			<div data-filter="appartements">Appartements</div>
+			<div data-filter="hotels-restaurants">Hôtels & restaurants</div>
+		</div>
 		<div class="categoriesContainer " ></div>
 		<div class="gallery">
+			<figure data-category="objets">
+				<img src="./assets/images/abajour-tahina.png" alt="Abat-jour Tahina">
+				<figcaption>Abat-jour Tahina</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/appartement-paris-v.png" alt="Appartement à Paris">
+				<figcaption>Appartement à Paris</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/appartement-paris-x.png" alt="Appartement à Paris">
+				<figcaption>Appartement à Paris</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/appartement-paris-xviii.png" alt="Appartement à Paris">
+				<figcaption>Appartement à Paris</figcaption>
+			</figure>
+			<figure data-category="hotels-restaurants">
+				<img src="./assets/images/bar-lullaby-paris.png" alt="Bar Lullaby à Paris">
+				<figcaption>Bar Lullaby à Paris</figcaption>
+			</figure>
+			<figure data-category="hotels-restaurants">
+				<img src="./assets/images/hotel-first-arte-new-delhi.png" alt="Hotel First Arte New Delhi">
+				<figcaption>Hotel First Arte New Delhi</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/la-balisiere.png" alt="La Balisière">
+				<figcaption>La Balisière</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/le-coteau-cassis.png" alt="Le Coteau de Cassis">
+				<figcaption>Le Coteau de Cassis</figcaption>
+			</figure>
+			<figure data-category="hotels-restaurants">
+				<img src="./assets/images/restaurant-sushisen-londres.png" alt="Restaurant Sushisen Londres">
+				<figcaption>Restaurant Sushisen Londres</figcaption>
+			</figure>
+			<figure data-category="objets">
+				<img src="./assets/images/structures-thermopolis.png" alt="Structures Thermopolis">
+				<figcaption>Structures Thermopolis</figcaption>
+			</figure>
+			<figure data-category="appartements">
+				<img src="./assets/images/villa-ferneze.png" alt="Villa Ferneze">
+				<figcaption>Villa Ferneze</figcaption>
+			</figure>
 		</div>
 	</section>	
 	<section id="contact">
-		<h2>Contact</h2>
-		<p>Vous avez un projet ? Discutons-en !</p>
-		<form action="#" method="post">
-			<label for="name">Nom</label>
-			<input type="text" name="name" id="name">
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<input type="submit" value="Envoyer">
-		</form>
+    <h2>Contact</h2>
+    <p>Vous avez un projet ? Discutons-en !</p>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci">
+
+        <input type="hidden" name="form-name" value="contact" />
+
+        <p style="display: none;">
+            <label>Ne pas remplir ce champ : <input name="bot-field" /></label>
+        </p>
+
+        <label for="name">Nom</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
 	</section>
-</main>
-<footer>
-	<nav>
-		<ul>
-			<li>Mentions Légales</li>
-		</ul>
-	</nav>
-</footer>
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li>Mentions Légales</li>
+				<li>© 2026 <a href="https://calvin-rawn.fr/" target="_blank" rel="noopener noreferrer">Calvin Rawn</a> | Tous droits réservés.</li>
+			</ul>
+		</nav>
+	</footer>
 
 <!--DIV pour supprimer les works -->
 <div id="modal-container" class="containerModals">

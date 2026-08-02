@@ -1,5 +1,24 @@
 console.log("Hello Worlds");
 
+document.querySelectorAll('.categoriesContainer > div').forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.dataset.filter;
+        const figures = document.querySelectorAll('.gallery figure');
+
+        figures.forEach(figure => {
+            if (category === "all" || figure.dataset.category === category) {
+                figure.style.display = "block";
+            } else {
+                figure.style.display = "none";
+            }
+        });
+
+        // Optionnel : mettre en évidence le bouton actif
+        document.querySelectorAll('.categoriesContainer > div').forEach(btn => btn.classList.remove('active-filter'));
+        button.classList.add('active-filter');
+    });
+});
+
 // Code pour afficher la galerie, filtre et login;
 //Affichagge de mes Works :
 
@@ -16,7 +35,7 @@ async function getWorks() {
     }
 }
 
-getWorks();
+//getWorks();
 
 let worksData = [];  // Variable pour stocker les données des travaux
 
@@ -101,7 +120,7 @@ async function getCategories() {
 
 
 
-getCategories();
+// getCategories();
 
 //fonction pour afficher les catégories
 
@@ -134,7 +153,7 @@ function filterWorksByCategory(categoryId) {
     }
 }
 
-filterWorksByCategory();
+// filterWorksByCategory();
 
 
 
@@ -343,7 +362,7 @@ async function selectCategories() {
     }
 }
 
-selectCategories();
+// selectCategories();
 
 document.getElementById('file-input').addEventListener('change', function(event) {
     const file = event.target.files[0];

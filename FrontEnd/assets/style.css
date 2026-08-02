@@ -623,3 +623,36 @@ h3{
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 	margin-bottom: 25px;
 }
+
+/* Page de remerciement (formulaire de contact) */
+
+#merci {
+	width: 50%;
+	margin: 100px auto;
+	text-align: center;
+}
+
+#merci h2 {
+	margin-bottom: 20px;
+}
+
+#merci p {
+	margin-bottom: 30px;
+	line-height: 1.6;
+}
+
+.retour-accueil {
+	display: inline-block;
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	padding: 10px 30px;
+	border-radius: 60px;
+	cursor: pointer;
+}
+
+.retour-accueil:hover {
+	background-color: #B1663C;
+	color: white;
+}
