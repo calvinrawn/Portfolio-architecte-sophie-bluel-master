@@ -67,7 +67,3 @@ Le frontend est un site statique, il ne se lance **pas** avec `npm start` mais d
 
 Si une erreur CORS apparaît dans la console du navigateur (F12), vérifier que le port déclaré ici correspond à celui autorisé dans le code du backend (fichier `app.js` ou équivalent).
 
-### 3. Utilisation
-
-Une fois le frontend et le backend lancés simultanément, se connecter avec le compte de test ci-dessus pour accéder au mode édition (ajout/suppression de projets, upload d'images).
-
